@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +20,6 @@
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -47,6 +44,19 @@
         <li>Trending</li>
         <li>Categories</li>
       </ul>
+
+      <div class="menu">
+        <img
+          src="./assets/images/icon-menu.svg"
+          alt="menu photo open"
+          class="menu__open"
+        />
+        <img
+          src="./assets/images/icon-menu-close.svg"
+          alt="menu photo close"
+          class="menu__close hidden"
+        />
+      </div>
     </header>
 
     <main>
@@ -103,7 +113,7 @@
       <section class="card__section">
         <div class="card__container">
           <div class="card">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="retro pc" />
             <div class="card__text--container">
               <h3>01</h3>
               <h4>Reviving Retro PCs</h4>
@@ -111,25 +121,40 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/images/image-top-laptops.jpg" alt="top laptops">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="top laptops"
+            />
             <div class="card__text--container">
               <h3>02</h3>
               <h4>Top 10 Laptops of 2022</h4>
               <p>Our best picks for various needs and budgets.</p>
             </div>
-
-            <div class="card">
-              <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth">
-              <div class="card__text--container">
-                <h3>03</h3>
-                <h4> The Growth of Gaming</h4>
-                <p>How the pandemic has sparked fresh opportunities.</p>
-              </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="gaming growth"
+            />
+            <div class="card__text--container">
+              <h3>03</h3>
+              <h4>The Growth of Gaming</h4>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    
+    <div class="overlay hidden">
+      <ul class="header__nav--overlay">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </div>
 
     <div class="attribution">
       Challenge by
@@ -137,5 +162,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
